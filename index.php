@@ -108,7 +108,7 @@ $app->group('/jwt', function (RouteCollectorProxy $group) {
 
 
 $app->get('[/]', function (Request $request, Response $response) {
-    $payload = json_encode(array("mensaje" => "Slim Framework 4 ccccc"));
+    $payload = json_encode(array("mensaje" => "Slim Framework 4"));
     $response->getBody()->write($payload);
     return $response->withHeader('Content-Type', 'application/json');
 });
